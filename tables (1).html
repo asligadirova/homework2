@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables & forms</title>
+    <style>
+        table th,
+        table td{ 
+           border-color: black;
+           border-width: 2px;
+           border-style: solid;
+           background-color: rgba(128, 255, 0, 0.158);
+        }
+        table th {
+            background-color: brown;
+        }
+        table{
+
+
+            border-collapse: collapse;
+        }
+    </style>
+    
+ </head>
+ <body>
+    <table>
+
+        <caption>PIPETTES - "serological"</caption>
+        <thead>
+         <tr>
+             <th>catalogue number</th>
+             <th>pipette volume</th>
+             <th>color code</th>
+             <th>box quantity</th>
+         </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>083.13.001</td>
+                <td>1 ml</td>
+                <td>yellow</td>
+                <td>500 pcs</td>
+               
+            </tr>
+            <tr>
+                <td>083.13.005</td>
+                <td>5 ml</td>
+                <td>green</td>
+                <td>200 pcs</td>
+            </tr>
+            <tr>
+                <td rowspan="2">083.13.xxx</td>
+                <td>10 ml</td>
+                <td>orange</td>
+                <td>100 pcs</td>
+            </tr>
+            <tr>
+                
+                <td>25 ml</td>
+                <td>red</td>
+                <td>150 pcs</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+      <hr>
+    <table>
+
+        <caption>Sales Table</caption>
+        <thead>
+            <tr>
+                <th scope="col">Fruit/Month</th>
+                <th scope="col">January</th>
+                <th scope="col">February</th>
+                <th scope="col">March</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <th scope="row">Apple</th>
+               <td> 1000 KG</td>
+               <td> 1500 KG</td>
+               <td> 2000 KG</td>
+            </tr>
+            <tr>
+                <th scope="row">Pear</th>
+                <td> 2000 KG</td>
+                <td> 1800 KG</td>
+                <td> 500 KG</td>
+             </tr>
+             <tr>
+                <th scope="row">Pomegranate</th>
+                <td> 3000 KG</td>
+                <td> 1000 KG</td>
+                <td> 2300 KG</td>
+             </tr> 
+        </tbody>
+    </table>
+
+ </body>
+</html>
