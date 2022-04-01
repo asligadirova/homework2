@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Student registration-firstname,lastname, birthdate,gender, specialty, password, confirm password, email, id upload -->
+    <form >
+      <div>
+        <label for="firstname">Firstname</label> <br>       
+        <input type="text" 
+         id="firstname"
+          placeholder="Asli"
+          name="firstname"
+          autocomplete="off"
+          > 
+      </div>
+      <div>
+        <label for="lastname">Lastname</label> <br>       
+        <input type="text" id="lastname" placeholder="Gadirova" name="lastname">
+      </div>
+      <div>
+        <label for="birthdate">Birthdate</label> <br>       
+        <input type="date" id="birthdate" name="birthdate">
+      </div>
+      <div>
+        <label >Gender</label> <br>  
+        <label for="female">
+            Female
+            <input type="radio" id="female" name="gender">
+        </label> 
+        <label for="male">
+            Male
+            <input type="radio" id="male" name="gender">
+        </label> 
+        <label for="other">
+            Other
+            <input type="radio" id="other" name="gender">
+        </label>          
+      </div>
+      <div>
+        <label >Skills</label> <br>
+        <label for="js">
+          Javascript
+          <input  id= "js"   type="checkbox"  name= "skills"> 
+        </label>
+        <label for="c#">
+         C#
+          <input  id= "c#"   type="checkbox"  name= "skills" checked> 
+        </label>
+        <label for="html">
+          HTML
+          <input  id= "html"   type="checkbox"  name= "skills"> 
+        </label>
+        <label for="css">
+          CSS
+          <input  id= "csss"   type="checkbox"  name= "skills" checked> 
+        </label>
+      </div>
+      <div>
+        <label for="speciality">Speciality</label> <br>
+        <select name="speciality" id="speciality">
+          <option value=""disabled>Select an option</option>
+          <option value="it">IT</option>
+          <option value="medical">Medical</option>
+          <option value="education">Education</option>
+        </select>
+      </div>
+      <div>
+        <label for="years_of_experience">Experience: (with months)</label><br>
+        <input id="years_of_experience" type="number"  max="1200" min="3">
+      </div>
+      <div>
+        <label for="password">Password</label> <br>
+        <input type="password" placeholder="Type a password" neme="password">
+      </div>
+      <div>
+        <label for="email">E-mail</label><br>
+        <input type="e-mail" placeholder="Type of e-mail" name="email">
+      </div>
+      <div> 
+        <label for="identification">ID</label><br>
+        <input type="file" name="identification" id="identification" >
+      </div>
+      <div>
+        <label for="about_me">About me</label> <br>
+        <textarea 
+        style="resize: both;"
+        name="about_me" 
+        id="about_me" 
+        cols="30"
+         rows="10"
+         >
+        
+        </textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
